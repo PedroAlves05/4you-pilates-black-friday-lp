@@ -1,0 +1,756 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow"><!-- só para o preview no GitHub Pages; não levar para o WordPress -->
+<title>4You Pilates | Black Friday Reformer Pilates Offers – Altona</title>
+<meta name="description" content="Black Friday at 4You Pilates, Altona: 6 classes for $59 or 21 days unlimited for $75, 15% off your first membership month, 10% off class packs and more. All November.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* =========================================================
+   TOKENS — mesmos valores das LPs Winter e Pregnancy (post-1080.css)
+   ========================================================= */
+:root{
+  --ink:#241E20;        /* texto e fundo escuro (card destaque, hero BF) */
+  --ink-2:#2F2729;      /* card sobre fundo escuro */
+  --brand:#AC444C;      /* ação: botões, preço, eyebrow */
+  --brand-dp:#8C343C;   /* hover do botão */
+  --mid:#6C5753;        /* texto secundário */
+  --accent:#C4A09A;     /* check, ponto do selo, itálico sobre escuro */
+  --blush:#F3E8E5;      /* fundo de seção rosado */
+  --ground:#FAF8F5;     /* fundo da página */
+  --surface:#F6F6F6;    /* fundo de card claro */
+  --line:#D1CCC9;       /* bordas */
+  --white:#FFFFFF;
+
+  --s-1:8px; --s-2:16px; --s-3:24px; --s-4:32px; --s-5:48px; --s-6:64px; --s-7:80px;
+  --sec-y:56px; --pad-x:20px; --maxw:1200px;
+
+  --r-card:24px; --r-pill:999px;
+  --shadow-card:0 20px 40px rgba(36,30,32,.10);
+  --shadow-btn:0 10px 24px rgba(172,68,76,.35);
+}
+@media (min-width:768px){ :root{ --sec-y:80px; --pad-x:32px; } }
+@media (min-width:1025px){ :root{ --sec-y:112px; --pad-x:40px; } }
+
+/* =========================================================
+   BASE
+   ========================================================= */
+*,*::before,*::after{ box-sizing:border-box; }
+html{ scroll-behavior:smooth; }
+body{ margin:0; font-family:"Inter",system-ui,sans-serif; font-size:16px; line-height:1.6; color:var(--ink); background:var(--ground); -webkit-font-smoothing:antialiased; }
+img{ max-width:100%; display:block; }
+a{ color:inherit; }
+h1,h2,h3{ font-family:"Fraunces",Georgia,serif; font-weight:500; line-height:1.12; margin:0; letter-spacing:-.01em; text-wrap:balance; }
+h1{ font-size:clamp(2.25rem,5.2vw,3.5rem); text-wrap:wrap; }
+h2{ font-size:clamp(1.875rem,4vw,2.75rem); }
+h3{ font-size:1.375rem; }
+h1 em,h2 em{ font-style:italic; font-weight:400; color:var(--brand); }
+p{ margin:0; }
+.container{ width:100%; max-width:var(--maxw); margin-inline:auto; padding-inline:var(--pad-x); }
+section{ padding-block:var(--sec-y); }
+
+.eyebrow{ font-size:.75rem; font-weight:600; letter-spacing:.15em; text-transform:uppercase; color:var(--brand); margin-bottom:var(--s-2); }
+.lede{ font-size:1.0625rem; color:var(--mid); max-width:58ch; }
+.secao-titulo{ text-align:center; margin-bottom:var(--s-5); }
+.secao-titulo h2{ max-width:24ch; margin-inline:auto; }
+.secao-titulo .lede{ margin:var(--s-2) auto 0; }
+
+/* Botões — pílula, caixa alta, igual às LPs anteriores */
+.btn{ display:inline-flex; align-items:center; justify-content:center; gap:var(--s-1); padding:16px 28px; border-radius:var(--r-pill); font-weight:600; font-size:.9375rem; letter-spacing:.03em; text-transform:uppercase; text-decoration:none; border:1.5px solid transparent; cursor:pointer; transition:background .2s, color .2s, border-color .2s; }
+.btn-primario{ background:var(--brand); color:var(--white); box-shadow:var(--shadow-btn); }
+.btn-primario:hover{ background:var(--brand-dp); }
+.btn-secundario{ background:var(--white); color:var(--ink); border-color:var(--ink); }
+.btn-secundario:hover{ background:var(--ink); color:var(--white); }
+.btn-claro{ background:transparent; color:var(--white); border-color:rgba(255,255,255,.7); }
+.btn-claro:hover{ background:var(--white); color:var(--ink); }
+.btn-bloco{ width:100%; }
+
+/* Selo pílula com ponto (hero-badge do kit) */
+.selo{ display:inline-flex; align-items:center; gap:var(--s-1); padding:8px 16px; border-radius:var(--r-pill); font-size:.8125rem; font-weight:500; }
+.selo-ponto{ width:8px; height:8px; border-radius:50%; background:var(--accent); flex-shrink:0; }
+
+.check{ width:18px; height:18px; border-radius:50%; background:var(--accent); color:var(--white); display:inline-flex; align-items:center; justify-content:center; font-size:11px; font-weight:700; flex-shrink:0; margin-top:3px; }
+.lista-check{ list-style:none; margin:0; padding:0; }
+.lista-check li{ display:flex; gap:12px; align-items:flex-start; padding:6px 0; font-size:.9375rem; }
+
+/* Slot de imagem — troque o <span> por <img> quando a foto chegar */
+.shot{ position:relative; border-radius:var(--r-card); overflow:hidden; background:#E7DCD9; display:flex; align-items:center; justify-content:center; }
+.shot img{ width:100%; height:100%; object-fit:cover; display:block; }
+.shot span{ font-size:13px; text-align:center; padding:16px; color:var(--mid); }
+
+/* =========================================================
+   1. CABEÇALHO
+   ========================================================= */
+.cabecalho{ position:sticky; top:0; z-index:50; background:rgba(250,248,245,.88); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px); border-bottom:1px solid var(--line); }
+.cabecalho .container{ display:flex; align-items:center; justify-content:space-between; gap:var(--s-2); padding-block:12px; }
+.cabecalho-logo img{ height:36px; width:auto; }
+.cabecalho .btn{ padding:12px 18px; font-size:.75rem; }
+@media (min-width:768px){
+  .cabecalho-logo img{ height:56px; }
+  .cabecalho .btn{ padding:14px 24px; font-size:.8125rem; }
+}
+
+/* =========================================================
+   2. HERO — escuro da marca, tom Black Friday
+   ========================================================= */
+.hero{ background:radial-gradient(ellipse at 85% 20%, rgba(172,68,76,.45) 0%, rgba(172,68,76,0) 55%), linear-gradient(160deg,#241E20 0%,#2F2427 60%,#3A2A2D 100%); color:var(--white); }
+.hero .container{ display:flex; flex-direction:column; gap:var(--s-5); }
+.hero .selo{ background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.18); color:rgba(255,255,255,.9); margin-bottom:var(--s-3); }
+.hero h1 em{ color:var(--accent); }
+.hero-lede{ font-size:1.0625rem; color:rgba(255,255,255,.78); max-width:52ch; margin-top:var(--s-3); }
+.hero-acoes{ display:flex; flex-wrap:wrap; gap:var(--s-2); margin-top:var(--s-4); }
+.hero-acoes .btn{ flex:1 1 100%; }
+.hero-numeros{ display:flex; gap:var(--s-2); margin-top:var(--s-5); padding-top:var(--s-4); border-top:1px solid rgba(255,255,255,.16); }
+.hero-numero{ flex:1 1 0; }
+.hero-numero strong{ display:block; font-family:"Inter",sans-serif; font-size:1.375rem; font-weight:600; line-height:1.1; }
+.hero-numero strong s{ display:block; font-size:.875rem; font-weight:400; color:rgba(255,255,255,.5); margin-top:2px; }
+.hero-numero span{ display:block; margin-top:6px; font-size:.6875rem; letter-spacing:.04em; text-transform:uppercase; color:rgba(255,255,255,.62); }
+
+.hero-midia{ position:relative; }
+.hero-foto{ height:420px; box-shadow:0 30px 60px rgba(0,0,0,.35); }
+.hero-foto img{ object-position:center 70%; }
+.hero-desconto{ position:absolute; top:-20px; right:16px; width:104px; height:104px; border-radius:50%; background:var(--brand); color:var(--white); display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; box-shadow:var(--shadow-btn); }
+.hero-desconto small{ font-size:.625rem; letter-spacing:.12em; text-transform:uppercase; }
+.hero-desconto strong{ font-family:"Fraunces",serif; font-size:1.75rem; font-weight:500; line-height:1; }
+.hero-prazo{ position:absolute; left:16px; right:16px; bottom:-24px; background:var(--ground); color:var(--ink); border-radius:20px; padding:var(--s-2) var(--s-3); box-shadow:var(--shadow-card); display:flex; align-items:center; gap:var(--s-2); }
+.hero-prazo-icone{ width:40px; height:40px; border-radius:50%; border:2px solid var(--brand); color:var(--brand); display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+.hero-prazo strong{ display:block; font-size:.9375rem; }
+.hero-prazo-texto span{ display:block; font-size:.8125rem; color:var(--mid); }
+
+@media (min-width:768px){
+  .hero-acoes .btn{ flex:0 0 auto; }
+  .hero-numeros{ gap:var(--s-3); }
+  .hero-numero strong{ font-size:1.75rem; }
+  .hero-numero strong s{ display:inline; font-size:1rem; margin:0 0 0 6px; }
+  .hero-numero span{ font-size:.75rem; letter-spacing:.08em; }
+  .hero-foto{ height:520px; }
+  .hero-prazo{ left:auto; right:24px; max-width:320px; }
+}
+@media (min-width:1025px){
+  .hero .container{ flex-direction:row; align-items:center; gap:var(--s-7); }
+  .hero-texto{ flex:1 1 55%; }
+  .hero-midia{ flex:1 1 45%; }
+  .hero-foto{ height:600px; }
+  .hero-desconto{ top:-28px; right:-28px; width:128px; height:128px; }
+  .hero-desconto strong{ font-size:2.25rem; }
+  .hero-prazo{ left:-40px; right:auto; bottom:40px; }
+}
+
+/* =========================================================
+   3. OFERTAS — as cinco ofertas e suas datas
+   ========================================================= */
+.ofertas{ background:var(--ground); }
+.ofertas-grid{ display:flex; flex-wrap:wrap; gap:var(--s-2); }
+.oferta{ flex:1 1 100%; display:flex; flex-direction:column; gap:var(--s-1); padding:var(--s-2) var(--s-3); background:var(--white); border:1px solid var(--line); border-radius:20px; text-decoration:none; transition:border-color .2s, transform .2s; }
+.oferta:hover{ border-color:var(--brand); transform:translateY(-2px); }
+.oferta-data{ align-self:flex-start; font-size:.6875rem; font-weight:600; letter-spacing:.1em; text-transform:uppercase; padding:4px 10px; border-radius:var(--r-pill); background:var(--blush); color:var(--brand); }
+.oferta-data.semana-bf{ background:var(--ink); color:var(--white); }
+.oferta strong{ font-family:"Fraunces",serif; font-size:1.25rem; font-weight:500; line-height:1.2; margin-top:4px; }
+.oferta p{ font-size:.875rem; color:var(--mid); }
+.oferta-publico{ margin-top:auto; padding-top:var(--s-1); font-size:.75rem; font-weight:600; letter-spacing:.06em; text-transform:uppercase; color:var(--ink); }
+@media (min-width:768px){ .oferta{ flex:1 1 calc(33.333% - var(--s-2)); padding:var(--s-3); } }
+@media (min-width:1025px){ .oferta{ flex:1 1 0; } }
+
+/* =========================================================
+   4. INTRO — os dois pacotes de entrada
+   ========================================================= */
+.intro{ background:var(--blush); }
+.intro .container{ display:flex; flex-direction:column; gap:var(--s-5); }
+.intro-lado .lede{ margin-top:var(--s-2); }
+.intro-foto{ display:none; box-shadow:var(--shadow-card); } /* só no desktop: no mobile empurrava os preços para baixo */
+.intro-principal .nota{ margin-top:var(--s-3); }
+.intro-cards{ display:flex; flex-direction:column; gap:var(--s-3); }
+.pacote{ position:relative; flex:1 1 0; display:flex; flex-direction:column; padding:var(--s-4) var(--s-3); background:var(--surface); border:1px solid var(--line); border-radius:var(--r-card); box-shadow:var(--shadow-card); }
+.pacote-destaque{ background:var(--ink); color:var(--white); border-color:var(--ink); }
+.pacote-etiqueta{ position:absolute; top:-14px; left:50%; transform:translateX(-50%); white-space:nowrap; background:var(--brand); color:var(--white); font-size:.6875rem; font-weight:700; letter-spacing:.1em; text-transform:uppercase; padding:6px 16px; border-radius:var(--r-pill); }
+.pacote-tipo{ font-size:.75rem; font-weight:600; letter-spacing:.12em; text-transform:uppercase; color:var(--brand); }
+.pacote-destaque .pacote-tipo{ color:var(--accent); }
+.pacote h3{ margin-top:6px; }
+.pacote-preco{ display:flex; align-items:baseline; flex-wrap:wrap; gap:10px; margin-top:var(--s-2); }
+.pacote-preco strong{ font-family:"Fraunces",serif; font-size:3.25rem; font-weight:600; line-height:1; color:var(--brand); }
+.pacote-destaque .pacote-preco strong{ color:var(--white); }
+.pacote-preco s{ font-size:1.25rem; color:var(--mid); }
+.pacote-destaque .pacote-preco s{ color:rgba(255,255,255,.55); }
+.pacote-economia{ font-size:.6875rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; padding:5px 10px; border-radius:var(--r-pill); background:var(--brand); color:var(--white); }
+.pacote-resumo{ margin-top:var(--s-1); font-size:.875rem; color:var(--mid); }
+.pacote-destaque .pacote-resumo{ color:rgba(255,255,255,.7); }
+.pacote .lista-check{ margin:var(--s-3) 0; padding-top:var(--s-3); border-top:1px solid var(--line); }
+.pacote-destaque .lista-check{ border-top-color:rgba(255,255,255,.16); }
+.pacote-rodape{ margin-top:auto; display:flex; flex-direction:column; gap:var(--s-2); }
+
+/* Código promocional copiável (demonstração) */
+.codigo{ display:flex; align-items:center; justify-content:space-between; gap:var(--s-1); padding:10px 10px 10px 16px; border:1.5px dashed var(--accent); border-radius:14px; font-size:.8125rem; }
+.codigo span{ color:var(--mid); }
+.pacote-destaque .codigo span{ color:rgba(255,255,255,.7); }
+.codigo code{ font-family:"Inter",sans-serif; font-weight:700; letter-spacing:.06em; }
+.codigo button{ border:0; background:var(--ink); color:var(--white); font:600 .6875rem "Inter",sans-serif; letter-spacing:.08em; text-transform:uppercase; padding:8px 12px; border-radius:var(--r-pill); cursor:pointer; flex-shrink:0; }
+.pacote-destaque .codigo button{ background:var(--white); color:var(--ink); }
+.nota{ font-size:.8125rem; color:var(--mid); text-align:center; }
+
+@media (min-width:768px){
+  .intro-cards{ flex-direction:row; }
+}
+@media (min-width:1025px){
+  .intro .container{ flex-direction:row; align-items:center; gap:var(--s-6); }
+  .intro-lado{ flex:0 0 34%; }
+  .intro-foto{ display:flex; height:440px; margin-top:var(--s-4); }
+  .intro-principal{ flex:1 1 0; }
+}
+
+/* =========================================================
+   5. PORQUE — o argumento central
+   ========================================================= */
+.porque{ background:var(--ground); }
+.porque .container{ display:flex; flex-direction:column; gap:var(--s-5); }
+.porque-foto{ height:380px; box-shadow:var(--shadow-card); }
+.porque-foto img{ object-position:center 20%; }
+.porque-texto > p{ color:var(--mid); margin-top:var(--s-2); max-width:60ch; }
+.assinatura{ margin-top:var(--s-3); padding-top:var(--s-3); border-top:1px solid var(--line); }
+.assinatura strong{ display:block; font-family:"Fraunces",serif; font-size:1.125rem; font-weight:600; }
+.assinatura span{ font-size:.75rem; letter-spacing:.08em; text-transform:uppercase; color:var(--mid); }
+.diferenciais{ display:flex; flex-direction:column; gap:var(--s-3); margin-top:var(--s-4); }
+.diferencial{ display:flex; gap:var(--s-2); }
+.diferencial-num{ font-family:"Fraunces",serif; font-style:italic; font-size:1.75rem; color:var(--brand); line-height:1; flex-shrink:0; width:44px; }
+.diferencial h3{ font-size:1.125rem; }
+.diferencial p{ font-size:.9375rem; color:var(--mid); margin-top:4px; }
+.porque .btn{ margin-top:var(--s-4); }
+@media (min-width:768px){ .porque-foto{ height:480px; } }
+@media (min-width:1025px){
+  .porque .container{ flex-direction:row; align-items:center; gap:var(--s-7); }
+  .porque-foto{ flex:0 0 42%; height:640px; }
+  .porque-texto{ flex:1 1 0; }
+}
+
+/* =========================================================
+   6. PLANOS — memberships com 15% OFF no 1º mês
+   ========================================================= */
+.planos{ background:var(--white); }
+.planos-grid{ display:flex; flex-direction:column; gap:var(--s-4); }
+.plano{ position:relative; flex:1 1 0; display:flex; flex-direction:column; padding:var(--s-4) var(--s-3); background:var(--surface); border:1px solid var(--line); border-radius:var(--r-card); }
+.plano-destaque{ background:var(--ink); color:var(--white); border-color:var(--ink); box-shadow:0 24px 48px rgba(36,30,32,.25); }
+.plano-desconto{ align-self:flex-start; font-size:.6875rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; padding:5px 12px; border-radius:var(--r-pill); background:var(--blush); color:var(--brand); margin-bottom:var(--s-2); }
+.plano-destaque .plano-desconto{ background:var(--brand); color:var(--white); }
+.plano h3{ font-size:1.375rem; }
+.plano-sub{ font-size:.875rem; color:var(--mid); margin-top:4px; }
+.plano-destaque .plano-sub{ color:rgba(255,255,255,.7); }
+.plano-preco{ display:flex; align-items:baseline; gap:4px; margin-top:var(--s-3); }
+.plano-preco small{ font-size:1.125rem; }
+.plano-preco strong{ font-family:"Fraunces",serif; font-size:3.25rem; font-weight:600; line-height:1; }
+.plano-preco span{ font-size:.9375rem; color:var(--mid); }
+.plano-destaque .plano-preco span{ color:rgba(255,255,255,.7); }
+.plano-info{ font-size:.8125rem; color:var(--mid); margin-top:var(--s-1); padding-bottom:var(--s-2); border-bottom:1px solid var(--line); }
+.plano-destaque .plano-info{ color:rgba(255,255,255,.7); border-bottom-color:rgba(255,255,255,.16); }
+.plano-por-aula{ font-size:.8125rem; font-weight:600; color:var(--brand); margin-top:var(--s-2); }
+.plano-destaque .plano-por-aula{ color:var(--accent); }
+.plano .lista-check{ margin:var(--s-2) 0 var(--s-3); }
+.plano .btn{ margin-top:auto; }
+.planos-rodape{ display:flex; flex-direction:column; align-items:center; gap:var(--s-2); margin-top:var(--s-5); }
+.planos-rodape .codigo{ background:var(--ground); }
+@media (min-width:768px){
+  .planos-grid{ flex-direction:row; align-items:stretch; gap:var(--s-2); }
+  .plano{ padding:var(--s-4) var(--s-2); }
+  .plano-preco strong{ font-size:2.5rem; }
+}
+@media (min-width:1025px){
+  .planos-grid{ gap:var(--s-3); }
+  .plano{ padding:var(--s-4) var(--s-3); }
+  .plano-preco strong{ font-size:3.25rem; }
+  .plano-destaque{ margin-block:-12px; }
+}
+
+/* =========================================================
+   7. MEMBROS — indicação, class packs e sorteio
+   ========================================================= */
+.membros{ background:linear-gradient(160deg,#241E20 0%,#3A2A2D 100%); color:var(--white); }
+.membros .eyebrow{ color:var(--accent); }
+.membros h2 em{ color:var(--accent); }
+.membros .lede{ color:rgba(255,255,255,.72); }
+.membros-grid{ display:flex; flex-direction:column; gap:var(--s-3); }
+.vantagem{ flex:1 1 0; display:flex; flex-direction:column; padding:var(--s-4) var(--s-3); background:var(--ink-2); border:1px solid rgba(255,255,255,.12); border-radius:var(--r-card); }
+.vantagem .oferta-data{ background:rgba(196,160,154,.18); color:var(--accent); }
+.vantagem .oferta-data.semana-bf{ background:var(--brand); color:var(--white); }
+.vantagem h3{ margin-top:var(--s-2); }
+.vantagem > p{ font-size:.9375rem; color:rgba(255,255,255,.72); margin-top:var(--s-1); }
+.vantagem-destaque{ margin-top:var(--s-3); padding:var(--s-2); border-radius:16px; background:rgba(255,255,255,.06); }
+.vantagem-destaque strong{ font-family:"Fraunces",serif; font-size:1.75rem; font-weight:500; }
+.vantagem-destaque span{ display:block; font-size:.8125rem; color:rgba(255,255,255,.65); }
+.passos{ list-style:none; margin:var(--s-3) 0 0; padding:0; display:flex; flex-direction:column; gap:var(--s-2); }
+.passos li{ display:flex; gap:12px; font-size:.9375rem; color:rgba(255,255,255,.85); }
+.passo-num{ width:26px; height:26px; border-radius:50%; border:1.5px solid var(--accent); color:var(--accent); font-size:.75rem; font-weight:700; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+.passos a{ color:var(--white); font-weight:600; }
+.packs{ list-style:none; margin:var(--s-3) 0 0; padding:0; }
+.pack{ display:flex; align-items:center; justify-content:space-between; gap:var(--s-2); padding:12px 0; border-bottom:1px solid rgba(255,255,255,.12); }
+.pack:first-child{ border-top:1px solid rgba(255,255,255,.12); }
+.pack-nome{ font-weight:600; font-size:.9375rem; }
+.pack-nome span{ display:block; font-weight:400; font-size:.75rem; color:rgba(255,255,255,.6); }
+.pack-preco{ text-align:right; white-space:nowrap; }
+.pack-preco s{ font-size:.8125rem; color:rgba(255,255,255,.5); margin-right:6px; }
+.pack-preco strong{ font-family:"Fraunces",serif; font-size:1.25rem; font-weight:600; }
+.vantagem-rodape{ margin-top:auto; padding-top:var(--s-3); display:flex; flex-direction:column; gap:var(--s-2); }
+.vantagem .codigo{ border-color:rgba(196,160,154,.6); }
+.vantagem .codigo span{ color:rgba(255,255,255,.7); }
+.vantagem .codigo button{ background:var(--white); color:var(--ink); }
+@media (min-width:768px){
+  .membros-grid{ flex-direction:row; flex-wrap:wrap; }
+  .vantagem{ flex:1 1 calc(50% - var(--s-3)); }
+}
+@media (min-width:1025px){ .vantagem{ flex:1 1 0; } }
+
+/* =========================================================
+   8. FAQ — <details> nativo; no Elementor vira o widget Accordion
+   ========================================================= */
+.faq{ background:var(--ground); }
+.faq-lista{ max-width:860px; margin-inline:auto; background:var(--white); border-radius:var(--r-card); box-shadow:var(--shadow-card); overflow:hidden; }
+.faq-item{ border-bottom:1px solid var(--line); }
+.faq-item:last-child{ border-bottom:0; }
+.faq-item summary{ list-style:none; cursor:pointer; display:flex; align-items:center; justify-content:space-between; gap:var(--s-2); padding:var(--s-3); font-weight:500; font-size:1rem; }
+.faq-item summary::-webkit-details-marker{ display:none; }
+.faq-icone{ font-size:1.25rem; line-height:1; flex-shrink:0; transition:transform .2s; }
+.faq-item[open] summary{ color:var(--brand); }
+.faq-item[open] .faq-icone{ transform:rotate(45deg); }
+.faq-item p{ padding:0 var(--s-3) var(--s-3); font-size:.9375rem; color:var(--mid); max-width:70ch; }
+
+/* =========================================================
+   9. FECHAMENTO
+   ========================================================= */
+.fechamento{ background:linear-gradient(120deg,#241E20 0%,#3A2A2D 55%,#5A3A3E 100%); color:var(--white); text-align:center; }
+.fechamento h2{ max-width:22ch; margin-inline:auto; }
+.fechamento h2 em{ color:var(--accent); }
+.fechamento-lede{ font-family:"Fraunces",serif; font-style:italic; font-size:1.125rem; color:rgba(255,255,255,.82); max-width:52ch; margin:var(--s-3) auto 0; }
+.fechamento-acoes{ display:flex; flex-direction:column; gap:var(--s-2); margin-top:var(--s-4); }
+.fechamento-provas{ display:flex; flex-wrap:wrap; justify-content:center; gap:var(--s-1) var(--s-3); margin-top:var(--s-4); font-size:.8125rem; color:rgba(255,255,255,.72); }
+@media (min-width:768px){ .fechamento-acoes{ flex-direction:row; justify-content:center; } }
+
+/* =========================================================
+   RODAPÉ
+   ========================================================= */
+.rodape{ background:var(--ink); color:rgba(255,255,255,.7); padding-block:var(--s-6) var(--s-4); font-size:.875rem; }
+.rodape-topo{ display:flex; flex-direction:column; gap:var(--s-4); padding-bottom:var(--s-4); border-bottom:1px solid rgba(255,255,255,.12); }
+.rodape-marca img{ height:56px; width:auto; }
+.rodape-marca p{ max-width:38ch; margin-top:var(--s-2); }
+.rodape h4{ font-size:.75rem; letter-spacing:.12em; text-transform:uppercase; color:var(--white); margin:0 0 var(--s-2); }
+.rodape address{ font-style:normal; line-height:2; }
+.rodape a{ text-decoration:none; }
+.rodape a:hover{ color:var(--white); }
+.rodape-copy{ text-align:center; margin-top:var(--s-3); font-size:.8125rem; }
+@media (min-width:768px){ .rodape-topo{ flex-direction:row; justify-content:space-between; } }
+
+/* =========================================================
+   MOVIMENTO — só a entrada do hero (Entrance Animation: Fade In Up)
+   ========================================================= */
+@keyframes sobe{ from{ opacity:0; transform:translateY(16px); } to{ opacity:1; transform:none; } }
+.hero .selo{ animation:sobe .6s ease both; }
+.hero h1{ animation:sobe .6s .1s ease both; }
+.hero-lede{ animation:sobe .6s .2s ease both; }
+.hero-acoes{ animation:sobe .6s .3s ease both; }
+.hero-midia{ animation:sobe .7s .35s ease both; }
+@media (prefers-reduced-motion:reduce){ *{ animation:none !important; transition:none !important; scroll-behavior:auto !important; } }
+</style>
+</head>
+<body>
+
+<!-- ===================== 1. CABEÇALHO ===================== -->
+<header class="cabecalho">
+  <div class="container">
+    <a href="#" class="cabecalho-logo"><img src="assets/logo_4you.webp" alt="4You Pilates" width="277" height="96"></a>
+    <a href="#intro" class="btn btn-primario">Claim Your Intro Deal</a>
+  </div>
+</header>
+
+<main>
+
+<!-- ===================== 2. HERO ===================== -->
+<section class="hero" id="topo">
+  <div class="container">
+    <div class="hero-texto">
+      <span class="selo"><span class="selo-ponto"></span>Black Friday · All November · Altona VIC</span>
+      <h1>Black Friday at 4You. <em>Start Reformer Pilates from $59.</em></h1>
+      <p class="hero-lede">All through November, both of our intro packs are on sale. Small Reformer classes in Altona, led by a physiotherapist and built for people starting out.</p>
+      <div class="hero-acoes">
+        <a href="#intro" class="btn btn-primario">Claim Your Intro Deal</a>
+        <a href="#ofertas" class="btn btn-claro">See All 5 Offers</a>
+      </div>
+      <div class="hero-numeros">
+        <div class="hero-numero"><strong>$59<s>$79</s></strong><span>6 classes · 2 weeks</span></div>
+        <div class="hero-numero"><strong>$75<s>$99</s></strong><span>21 days unlimited</span></div>
+        <div class="hero-numero"><strong>15+ yrs</strong><span>Physio expertise</span></div>
+      </div>
+    </div>
+
+    <div class="hero-midia">
+      <div class="shot hero-foto">
+        <img src="assets/pilates-4you-woman.webp" alt="Client doing a Reformer Pilates exercise at the 4You studio in Altona" width="1080" height="1440">
+      </div>
+      <div class="hero-desconto"><small>Save up to</small><strong>$24</strong></div>
+      <div class="hero-prazo">
+        <span class="hero-prazo-icone" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>
+        </span>
+        <div class="hero-prazo-texto">
+          <strong>Beginners welcome</strong>
+          <span>Clinical Style classes for newcomers &amp; injuries</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 3. OFERTAS ===================== -->
+<section class="ofertas" id="ofertas">
+  <div class="container">
+    <header class="secao-titulo">
+      <p class="eyebrow">Black Friday 2026</p>
+      <h2>Five ways to save <em>this November</em></h2>
+      <p class="lede">Whether you're new to Pilates or already part of the studio, there's an offer here for you.</p>
+    </header>
+    <div class="ofertas-grid">
+      <a href="#intro" class="oferta">
+        <span class="oferta-data">1–30 Nov</span>
+        <strong>Intro packs from $59</strong>
+        <p>6 classes for $59 or 21 days unlimited for $75.</p>
+        <span class="oferta-publico">New to 4You →</span>
+      </a>
+      <a href="#planos" class="oferta">
+        <span class="oferta-data">1–30 Nov</span>
+        <strong>15% off your first month</strong>
+        <p>On any membership you join in November.</p>
+        <span class="oferta-publico">New members →</span>
+      </a>
+      <a href="#membros" class="oferta">
+        <span class="oferta-data">1–30 Nov</span>
+        <strong>Bring a friend, free</strong>
+        <p>Then 1 week unlimited for $30 if they want to keep going.</p>
+        <span class="oferta-publico">Members →</span>
+      </a>
+      <a href="#membros" class="oferta">
+        <span class="oferta-data semana-bf">23–29 Nov</span>
+        <strong>10% off class packs</strong>
+        <p>Any class pack, Black Friday week only.</p>
+        <span class="oferta-publico">Everyone →</span>
+      </a>
+      <a href="#membros" class="oferta">
+        <span class="oferta-data">1–30 Nov</span>
+        <strong>Check-in Draw</strong>
+        <p>Post, tag and show up to win 15% off or 4You gifts.</p>
+        <span class="oferta-publico">Members →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 4. INTRO ===================== -->
+<section class="intro" id="intro">
+  <div class="container">
+    <div class="intro-lado">
+      <p class="eyebrow">New to 4You · 1–30 November</p>
+      <h2>Two ways to start, <em>both on sale</em></h2>
+      <p class="lede">Try a few classes at your own pace, or come as often as you like for three weeks. Every class style is included, from Clinical to Athletic.</p>
+      <div class="shot intro-foto">
+        <img src="assets/Pilates-Reformer-Side-Bend.webp" alt="Side bend on the Reformer during a small group class at 4You Pilates" width="1536" height="2048">
+      </div>
+    </div>
+
+    <div class="intro-principal">
+      <div class="intro-cards">
+        <article class="pacote">
+          <p class="pacote-tipo">Intro · Try it</p>
+          <h3>6 Classes in 2 Weeks</h3>
+          <div class="pacote-preco"><strong>$59</strong><s>$79</s><span class="pacote-economia">Save $20</span></div>
+          <p class="pacote-resumo">$9.83 per class · 2 weeks expiry</p>
+          <ul class="lista-check">
+            <li><span class="check">✓</span>6 Reformer classes to use in 2 weeks</li>
+            <li><span class="check">✓</span>All class styles, from Clinical to Athletic</li>
+            <li><span class="check">✓</span>Small classes with physio guidance</li>
+          </ul>
+          <div class="pacote-rodape">
+            <div class="codigo"><span>Code <code>[CODE-6CLASSES]</code></span><button type="button" data-copiar="[CODE-6CLASSES]">Copy</button></div>
+            <a href="https://momence.com/4you-Pilates/membership/2-weeks-Unlimited-/402973" class="btn btn-secundario btn-bloco">Get 6 Classes for $59</a>
+          </div>
+        </article>
+
+        <article class="pacote pacote-destaque">
+          <span class="pacote-etiqueta">Biggest saving</span>
+          <p class="pacote-tipo">Intro · Build the habit</p>
+          <h3>21 Days Unlimited</h3>
+          <div class="pacote-preco"><strong>$75</strong><s>$99</s><span class="pacote-economia">Save $24</span></div>
+          <p class="pacote-resumo">Unlimited classes · 21 days</p>
+          <ul class="lista-check">
+            <li><span class="check">✓</span>Unlimited Reformer classes for 21 days</li>
+            <li><span class="check">✓</span>All class styles, from Clinical to Athletic</li>
+            <li><span class="check">✓</span>Small classes with physio guidance</li>
+          </ul>
+          <div class="pacote-rodape">
+            <div class="codigo"><span>Code <code>[CODE-21DAYS]</code></span><button type="button" data-copiar="[CODE-21DAYS]">Copy</button></div>
+            <a href="https://momence.com/m/666323" class="btn btn-primario btn-bloco">Get 21 Days for $75</a>
+          </div>
+        </article>
+      </div>
+      <p class="nota">Enter your code at checkout. Valid on purchases made 1–30 November 2026.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 5. PORQUE (argumento central) ===================== -->
+<section class="porque" id="porque">
+  <div class="container">
+    <div class="shot porque-foto">
+      <img src="assets/Juliana.webp" alt="Juliana, founder of 4You Pilates and qualified physiotherapist, at the studio" width="1000" height="1000">
+    </div>
+    <div class="porque-texto">
+      <p class="eyebrow">Why 4You</p>
+      <h2>A Black Friday price. <em>The same care in every class.</em></h2>
+      <p>I'm Juliana, founder of 4You Pilates. I trained as a physiotherapist in Brazil, and my own back pain and scoliosis are what led me to Pilates. It gave me my mobility and confidence back.</p>
+      <p>That's how every class here is run, at any price: small, carefully guided and adapted to your body.</p>
+
+      <div class="diferenciais">
+        <div class="diferencial">
+          <span class="diferencial-num">01</span>
+          <div><h3>Truly small classes</h3><p>Room to move, and the one-on-one guidance you need to progress safely, at any fitness level.</p></div>
+        </div>
+        <div class="diferencial">
+          <span class="diferencial-num">02</span>
+          <div><h3>Physio-led</h3><p>Over 15 years of physiotherapy experience behind how every class is planned and taught.</p></div>
+        </div>
+        <div class="diferencial">
+          <span class="diferencial-num">03</span>
+          <div><h3>Start where you are</h3><p>Our Clinical Style classes are made for beginners, people with injuries or anyone returning to exercise.</p></div>
+        </div>
+      </div>
+
+      <div class="assinatura">
+        <strong>Juliana</strong>
+        <span>Founder · Qualified Physiotherapist</span>
+      </div>
+      <a href="#intro" class="btn btn-primario">Claim Your Intro Deal</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 6. PLANOS ===================== -->
+<section class="planos" id="planos">
+  <div class="container">
+    <header class="secao-titulo">
+      <p class="eyebrow">New memberships · 1–30 November</p>
+      <h2>15% off your first month <em>on any plan</em></h2>
+      <p class="lede">Ready to commit? Join any membership in November and your first month is 15% off.</p>
+    </header>
+
+    <div class="planos-grid">
+      <article class="plano">
+        <span class="plano-desconto">15% off 1st month</span>
+        <h3>Bronze</h3>
+        <p class="plano-sub">Perfect for getting started consistently</p>
+        <div class="plano-preco"><small>$</small><strong>50</strong><span>/week</span></div>
+        <p class="plano-info">8 classes per month · 3-month minimum</p>
+        <p class="plano-por-aula">$25.00 per class</p>
+        <ul class="lista-check">
+          <li><span class="check">✓</span>2 classes per week</li>
+          <li><span class="check">✓</span>Plan renews every 7 days</li>
+          <li><span class="check">✓</span>Access to all class styles</li>
+        </ul>
+        <a href="https://momence.com/m/327379" class="btn btn-secundario btn-bloco">Choose Bronze</a>
+      </article>
+
+      <article class="plano plano-destaque">
+        <span class="plano-desconto">15% off 1st month</span>
+        <h3>Silver</h3>
+        <p class="plano-sub">Build a steady, transformative practice</p>
+        <div class="plano-preco"><small>$</small><strong>67.50</strong><span>/week</span></div>
+        <p class="plano-info">12 classes per month · 3-month minimum</p>
+        <p class="plano-por-aula">$22.50 per class</p>
+        <ul class="lista-check">
+          <li><span class="check">✓</span>3 classes per week</li>
+          <li><span class="check">✓</span>Plan renews every 7 days</li>
+          <li><span class="check">✓</span>Priority booking access</li>
+        </ul>
+        <a href="https://momence.com/m/327404" class="btn btn-primario btn-bloco">Choose Silver</a>
+      </article>
+
+      <article class="plano">
+        <span class="plano-desconto">15% off 1st month</span>
+        <h3>Golden Unlimited</h3>
+        <p class="plano-sub">For the dedicated, daily practitioner</p>
+        <div class="plano-preco"><small>$</small><strong>102</strong><span>/week</span></div>
+        <p class="plano-info">Unlimited classes · 3-month minimum</p>
+        <p class="plano-por-aula">$17.00 per class</p>
+        <ul class="lista-check">
+          <li><span class="check">✓</span>Up to 6 classes per week</li>
+          <li><span class="check">✓</span>Monthly assessment</li>
+          <li><span class="check">✓</span>Custom training program</li>
+        </ul>
+        <a href="https://momence.com/m/327405" class="btn btn-secundario btn-bloco">Choose Golden</a>
+      </article>
+    </div>
+
+    <div class="planos-rodape">
+      <div class="codigo"><span>Membership code <code>[CODE-MEMBER15]</code></span><button type="button" data-copiar="[CODE-MEMBER15]">Copy</button></div>
+      <p class="nota">15% applies to your first month only. Valid on memberships started 1–30 November 2026.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 7. MEMBROS ===================== -->
+<section class="membros" id="membros">
+  <div class="container">
+    <header class="secao-titulo">
+      <p class="eyebrow">Already part of 4You?</p>
+      <h2>Black Friday is <em>for our members too</em></h2>
+      <p class="lede">Bring someone along, stock up on classes, or keep showing up and go in the draw.</p>
+    </header>
+
+    <div class="membros-grid">
+      <article class="vantagem">
+        <span class="oferta-data">1–30 Nov</span>
+        <h3>Member Referral Special</h3>
+        <p>Bring a friend to class with you, free. If they'd like to keep going, they get a full week of unlimited classes for $30.</p>
+        <div class="vantagem-destaque">
+          <strong>Free</strong> <span>first class for your friend</span>
+        </div>
+        <div class="vantagem-destaque">
+          <strong>$30</strong> <span>1 week unlimited if they continue</span>
+        </div>
+        <div class="vantagem-rodape">
+          <a href="sms:0419486498" class="btn btn-claro btn-bloco">Book My Friend In</a>
+        </div>
+      </article>
+
+      <article class="vantagem">
+        <span class="oferta-data semana-bf">Black Friday week · 23–29 Nov</span>
+        <h3>10% off any class pack</h3>
+        <p>Stock up for summer. Any class pack bought during Black Friday week is 10% off.</p>
+        <ul class="packs">
+          <li class="pack">
+            <span class="pack-nome">5 Class Pack<span>2 months expiry</span></span>
+            <span class="pack-preco"><s>$160</s><strong>$144</strong></span>
+          </li>
+          <li class="pack">
+            <span class="pack-nome">10 Class Pack<span>3 months expiry</span></span>
+            <span class="pack-preco"><s>$300</s><strong>$270</strong></span>
+          </li>
+          <li class="pack">
+            <span class="pack-nome">25 Class Pack<span>4 months expiry</span></span>
+            <span class="pack-preco"><s>$675</s><strong>$607.50</strong></span>
+          </li>
+        </ul>
+        <div class="vantagem-rodape">
+          <div class="codigo"><span>Code <code>[CODE-PACKS10]</code></span><button type="button" data-copiar="[CODE-PACKS10]">Copy</button></div>
+          <a href="https://momence.com/4you-Pilates/membership/10-Class-Package-/327410" class="btn btn-primario btn-bloco">Shop Class Packs</a>
+        </div>
+      </article>
+
+      <article class="vantagem">
+        <span class="oferta-data">1–30 Nov</span>
+        <h3>Black Friday Check-in Draw</h3>
+        <p>Show up all month and you could win 15% off your next month or exclusive 4You gifts.</p>
+        <div class="vantagem-destaque">
+          <strong>15% off</strong> <span>your next month, or exclusive 4You gifts</span>
+        </div>
+        <ol class="passos">
+          <li><span class="passo-num">1</span><span>Post a story from the studio</span></li>
+          <li><span class="passo-num">2</span><span>Tag <a href="https://www.instagram.com/4youpilates/">@4youpilates</a></span></li>
+          <li><span class="passo-num">3</span><span>Complete your weekly classes all through November</span></li>
+        </ol>
+        <div class="vantagem-rodape">
+          <a href="https://www.instagram.com/4youpilates/" class="btn btn-claro btn-bloco">Follow @4youpilates</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 8. FAQ ===================== -->
+<section class="faq" id="faq">
+  <div class="container">
+    <header class="secao-titulo">
+      <p class="eyebrow">Common Questions</p>
+      <h2>Everything you need to know</h2>
+    </header>
+    <div class="faq-lista">
+      <details class="faq-item" open>
+        <summary>Which intro pack should I choose?<span class="faq-icone">+</span></summary>
+        <p>If you'd like to try Pilates at a relaxed pace, 6 classes in 2 weeks for $59 is about three classes a week. If you can come more often and want to build a routine quickly, 21 days unlimited for $75 lets you book as many classes as you like.</p>
+      </details>
+      <details class="faq-item">
+        <summary>I've never done Pilates before. Is this for me?<span class="faq-icone">+</span></summary>
+        <p>Absolutely. Many of our members started as complete beginners. Our Clinical Style classes are designed for newcomers, those returning to exercise, or anyone with injuries. We meet you exactly where you are.</p>
+      </details>
+      <details class="faq-item">
+        <summary>How do I use my Black Friday code?<span class="faq-icone">+</span></summary>
+        <p>Each offer on this page has its own code. Copy it, tap the button to choose your pack or plan, and enter the code at checkout.</p>
+      </details>
+      <details class="faq-item">
+        <summary>How long do the offers run?<span class="faq-icone">+</span></summary>
+        <p>The intro packs, 15% off new memberships, the Member Referral Special and the Check-in Draw run from 1 to 30 November 2026. The 10% off class packs is for Black Friday week only, 23 to 29 November.</p>
+      </details>
+      <details class="faq-item">
+        <summary>How does the Member Referral Special work?<span class="faq-icone">+</span></summary>
+        <p>Bring a friend to class with you and their class is free. If they'd like to keep going, they can get 1 week of unlimited classes for $30.</p>
+      </details>
+      <details class="faq-item">
+        <summary>How do I enter the Check-in Draw?<span class="faq-icone">+</span></summary>
+        <p>Post a story from the studio, tag @4youpilates and complete your weekly classes every week in November. Do all three and you're in the draw for 15% off your next month or exclusive 4You gifts.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 9. FECHAMENTO ===================== -->
+<section class="fechamento">
+  <div class="container">
+    <h2>Make November the month <em>you start.</em></h2>
+    <p class="fechamento-lede">Six classes for $59 or three unlimited weeks for $75, in a small, physio-led studio in Altona. Offers end 30 November.</p>
+    <div class="fechamento-acoes">
+      <a href="#intro" class="btn btn-primario">Claim Your Intro Deal</a>
+      <a href="#planos" class="btn btn-claro">See Membership Offers</a>
+    </div>
+    <div class="fechamento-provas">
+      <span>✓ From $59 for 6 classes</span>
+      <span>✓ Expert physiotherapist guidance</span>
+      <span>✓ Small, welcoming classes</span>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===================== RODAPÉ ===================== -->
+<footer class="rodape">
+  <div class="container">
+    <div class="rodape-topo">
+      <div class="rodape-marca">
+        <img src="assets/logo_4you.webp" alt="4You Pilates" width="277" height="96">
+        <p>A boutique Reformer Pilates studio in Altona, Victoria. Personalised attention, expert guidance, and a community that helps you move better and feel stronger.</p>
+      </div>
+      <div>
+        <h4>Visit Us</h4>
+        <address>
+          110 Pier Street<br>
+          Altona, VIC 3018<br>
+          <a href="tel:0419486498">0419 486 498</a><br>
+          <a href="mailto:hello@4youpilates.com.au">hello@4youpilates.com.au</a>
+        </address>
+      </div>
+    </div>
+    <p class="rodape-copy">© 2026 4You Pilates · All rights reserved</p>
+  </div>
+</footer>
+
+<script>
+/* Copiar código promocional — demonstração.
+   No Elementor: widget Button com o código no texto, ou HTML widget com este script. */
+document.querySelectorAll('[data-copiar]').forEach(function (botao) {
+  botao.addEventListener('click', function () {
+    var codigo = botao.getAttribute('data-copiar');
+    if (navigator.clipboard) navigator.clipboard.writeText(codigo);
+    botao.textContent = 'Copied';
+    setTimeout(function () { botao.textContent = 'Copy'; }, 1800);
+  });
+});
+
+</script>
+</body>
+</html>
